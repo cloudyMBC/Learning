@@ -1,0 +1,11 @@
+<h1>
+	<% if @city.blank? && @country.blank? %>
+		This user has no city or country.
+	<% elsif @city.blank? %>
+		This user has no city.
+	<% elsif @country.blank? %>
+		This user has no country.
+	<% else %>
+		<%= @username %> lives in <%= @city %>, <%= @country %> (according to SoundCloud)!
+	<% end %>
+</h1>
