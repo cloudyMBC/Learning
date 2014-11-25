@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'lookup' => 'lookup#index'
 
+  get 'tracks/:id' => 'tracks#show'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
