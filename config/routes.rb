@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get 'tracks/:id' => 'tracks#show'
 
+  get 'playlists/:id' => 'playlists#show'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
